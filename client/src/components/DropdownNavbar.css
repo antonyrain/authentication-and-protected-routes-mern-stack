@@ -1,0 +1,21 @@
+.dropdown-navbar {
+    display: none;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    padding: 10px;
+    background-color: var(--component-bg);
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown-navbar-links {
+    list-style: none;
+}
+
+@media (max-width: 960px) {
+    .dropdown-navbar {
+        display: block;
+    }
+}

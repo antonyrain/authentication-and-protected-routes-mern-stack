@@ -1,0 +1,28 @@
+:root {
+  /* --body-bg: rgba(242, 235, 235, 0.9); */
+  --body-bg: #faf8f5;
+  /* --component-bg: rgba(255, 247, 247, 0.9); */
+  --component-bg: white;
+  --font: 'Monospace', sans-serif;
+  --font-color: #e67d50;
+  --color-txt: #000;
+
+
+  --button-gradient: #D8D9DB 0%, #fff 80%, #FDFDFD 100%;
+  --button-border: #8F9092;
+  --button-text: #606060;
+
+  --box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  --shadow-text-area: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background: var(--body-bg);
+    font-family: var(--font);
+    height: 100vh;
+  }

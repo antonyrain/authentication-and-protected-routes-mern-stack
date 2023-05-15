@@ -1,0 +1,99 @@
+.downloadModal {
+  position: fixed;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.downloadModal.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-out;
+}
+
+.downloadModalContetnt {
+  text-align: justify;
+  min-width: 250px;
+  background: white;
+  border: black solid 2px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.downloadModalContetnt p > span {
+  color: red;
+}
+
+.downloadModalContetnt p > a {
+  text-decoration: none;
+}
+
+.circleBtnClose {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  color: white;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin-bottom: 5px;
+  margin-left: 200px;
+  padding: 0.5em;
+}
+
+.circleBtnClose:hover {
+  border: 2px solid red;
+}
+  
+.circleBtnClose::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  background-color: black;
+  width: 2px;
+  left: 12px;
+  top: 5px;
+  bottom: 5px;
+  transform: rotate(45deg);
+}
+
+.circleBtnClose::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  background-color: black;
+  height: 2px;
+  top:12px;
+  left: 5px;
+  right: 5px;
+  transform: rotate(45deg);
+}
+
+.circleBtnClose:hover:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  background-color: red;
+  width: 2px;
+  left: 12px;
+  top: 5px;
+  bottom: 5px;
+  transform: rotate(45deg);
+}
+
+.circleBtnClose:hover:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  background-color: red;
+  height: 2px;
+  top:12px;
+  left: 5px;
+  right: 5px;
+  transform: rotate(45deg);
+}
